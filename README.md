@@ -4,4 +4,5 @@ chmod +x setup.sh
 3) Corre el setup.sh
 ./setup.sh
 Reinicia el BSPWN
-!(https://github.com/ThePunkster/dotfileVampire/blob/main/screenshot.png)
+![Text](https://raw.githubusercontent.com/ThePunkster/dotfileVampire/main/screenshot.png)
+
