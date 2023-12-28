@@ -20,6 +20,7 @@ echo -e "\nCreando carpetas y pegando archivos\n"
 mkdir -p "$HOME/.config/polybar"
 mkdir -p "$HOME/.config/bin"
 mkdir -p "$HOME/.config/picom"
+mkdir -p "$HOME/background"
 
 # Dar permisos a los archivos
 chmod +x launch.sh ethernet_ip.sh ovpn_htb_ip.sh victimip.sh
@@ -28,13 +29,14 @@ chmod +x launch.sh ethernet_ip.sh ovpn_htb_ip.sh victimip.sh
 cp colors.ini modules.ini config.ini launch.sh "$HOME/.config/polybar"
 cp ethernet_ip.sh ovpn_htb_ip.sh victimip.sh target "$HOME/.config/bin"
 cp picom "$HOME/.config/picom"
+cp vampire.jpg "$HOME/background"
 
 # Agregar comandos al archivo bspwmrc
 echo "$HOME/.config/polybar/./launch.sh" >> "$HOME/.config/bspwm/bspwmrc"
 echo "picom" >> "$HOME/.config/bspwm/bspwmrc"
+echo "--bg-fill $HOME/background/vampire.jpg" >> "$HOME/.config/bspwm/bspwmrc"
 
 # Actualizar paquetes
 sudo apt update 
-sudo apt upgrade 
 
 echo -e "\nPor favor reinicie bspwm para ver los cambios\n"
