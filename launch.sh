@@ -12,6 +12,6 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 polybar -q cthulhu-bar -c ~/.config/polybar/config.ini &
 
-polybar -q cthulhu-bar2 -c ~/home/morgan/.config/polybar/config.ini &
+polybar -q cthulhu-bar2 -c ~/.config/polybar/config.ini &
 
-polybar -q cthulhu-bar3 -c ~/home/morgan/.config/polybar/config.ini &
+polybar -q cthulhu-bar3 -c ~/.config/polybar/config.ini &
