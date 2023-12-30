@@ -28,7 +28,7 @@ chmod +x launch.sh ethernet_ip.sh ovpn_htb_ip.sh victimip.sh
 # Copiar archivos a los directorios adecuados
 cp colors.ini modules.ini config.ini launch.sh "$HOME/.config/polybar"
 cp ethernet_ip.sh ovpn_htb_ip.sh victimip.sh target "$HOME/.config/bin"
-cp picom "$HOME/.config/picom"
+cp picom.conf "$HOME/.config/picom"
 cp vampire.jpg "$HOME/background"
 
 # Agregar comandos al archivo bspwmrc
