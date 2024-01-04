@@ -4,6 +4,33 @@
 sudo apt update
 sudo apt install -y xorg bspwm sxhkd rxvt-unicode feh compton
 
+# Configurar el gestor de ventanas BSPWM y SXHKD
+mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/sxhkd
+cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+chmod +x ~/.config/bspwm/bspwmrc
+
+# Instalar otras herramientas útiles (puedes agregar más si lo deseas)
+sudo apt install -y dmenu rofi lxappearance nitrogen
+
+# Configurar compton para la transparencia
+mkdir -p ~/.config/compton
+echo "backend = \"glx\";
+glx-no-stencil = true;
+glx-no-rebind-pixmap = true;
+vsync = \"opengl-swc\";" >> ~/.config/compton.conf
+
+# Instalar el administrador de ventanas predeterminado
+echo "exec bspwm" > ~/.xinitrc
+
+echo "Instalación completa. Por favor, reinicia tu sistema o inicia una nueva sesión para utilizar BSPWM."
+
+
+# Actualizar el sistema e instalar dependencias
+sudo apt update
+sudo apt install -y xorg bspwm sxhkd rxvt-unicode feh compton
+
 # Instalar kitty o actualizar a la última versión
 if command -v kitty &>/dev/null; then
     echo "Kitty ya está instalado. Actualizando a la última versión..."
