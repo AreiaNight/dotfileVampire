@@ -116,3 +116,10 @@ sudo apt install -y zsh-syntax-highlighting zsh-autosuggestions
 sudo mkdir /usr/share/zsh-sudo
 cd /usr/share/zsh-sudo
 sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh
+
+
+
+
+sudo apt install -y bspwm sxhkd rofi kitty picom calcurse todo-txt \
+ feh jq dunst betterlockscreen brightnessctl playerctl maim \
+ xclip imagemagick
