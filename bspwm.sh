@@ -138,3 +138,10 @@ cargo build --release
 cargo install --path .
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+sudo apt-get install -y pkg-config libglib2.0-dev
+
+rustup update
+
+cargo clean
+cargo build
