@@ -123,3 +123,18 @@ sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/
 sudo apt install -y bspwm sxhkd rofi kitty picom calcurse todo-txt \
  feh jq dunst betterlockscreen brightnessctl playerctl maim \
  xclip imagemagick
+
+
+
+sudo apt-get update
+sudo apt-get install -y curl
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+git clone https://github.com/elkowar/eww.git ~/.config/eww
+
+cd ~/.config/eww
+
+cargo build --release
+cargo install --path .
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
