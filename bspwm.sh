@@ -1,5 +1,7 @@
 #!/bin/bash
 
+https://www.dropbox.com/scl/fo/s8yfm48helpqnboicfzs3/h?rlkey=x9hzk0krb1ahs130rpuysfmxe&dl=0
+
 # Actualizar el sistema e instalar dependencias
 sudo apt update
 sudo apt install -y xorg bspwm sxhkd rxvt-unicode feh compton
